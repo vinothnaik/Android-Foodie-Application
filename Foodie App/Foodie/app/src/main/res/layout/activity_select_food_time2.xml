@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  
+    tools:context="com.food.planner.Activities.SelectFoodTime">
+<LinearLayout
+    android:weightSum="4"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginTop="53dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearLayout"
+    android:layout_below="@+id/textView2"
+    android:layout_alignParentStart="true">
+
+    <Button
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:background="@color/mycolor"
+        android:textColor="@color/white"
+        android:layout_width="200dp"
+
+        android:text="Breakfast"
+        android:id="@+id/breakfast"
+
+        />
+
+    <Button
+
+        android:background="@color/mycolor"
+        android:textColor="@color/white"
+        android:layout_marginTop="24dp"
+        android:layout_width="200dp"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:text="Lunch"
+        android:id="@+id/lunch"
+     />
+
+    <Button
+
+        android:background="@color/mycolor"
+        android:textColor="@color/white"
+        android:layout_marginTop="24dp"
+        android:layout_width="200dp"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:text="Dinner"
+        android:id="@+id/dinner"
+      />
+
+    <Button
+        android:background="@color/mycolor"
+        android:textColor="@color/white"
+        android:layout_marginTop="24dp"
+        android:layout_width="200dp"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:text="OTHERS"
+        android:id="@+id/others"
+        />
+
+</LinearLayout>
+
+
+
+
+
+    <TextView
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please select only 1 at a time"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:id="@+id/next"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/ic_bottom_bg"
+            android:layout_width="140dp"
+            android:layout_height="100dp"
+            />
+        <TextView
+            android:paddingTop="25dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:text="NEXT"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>
